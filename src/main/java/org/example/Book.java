@@ -4,6 +4,7 @@ public class Book implements Loanable {
     private Publisher publisher;
     private String borrower;
     private String title;
+    private int pageNumber;
 
     public Book(String title, Publisher publisher) {
         this.title = title;
@@ -13,6 +14,10 @@ public class Book implements Loanable {
 
     public Publisher getPublisher() {
         return publisher;
+    }
+
+    public int getPageNumber() {
+        return pageNumber;
     }
 
     public void setPublisher(Publisher publisher) {
@@ -27,6 +32,13 @@ public class Book implements Loanable {
     public void setBorrower(String borrower) {
         this.borrower = borrower;
     }
+
+    public void setPageNumber(int n)
+    {
+        this.pageNumber = n;
+    }
+
+
 
     public String getTitle() {
         return title;
@@ -54,5 +66,4 @@ public class Book implements Loanable {
                 ", title='" + title + '\'' +
                 '}';
     }
-
 }

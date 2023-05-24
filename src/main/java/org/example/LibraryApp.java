@@ -17,7 +17,7 @@ public class LibraryApp {
         {
             library.addBook(book);
         }
-        System.out.println(library.searchBook("Pensée pour moi-même").getTitle());
-
+        books.get(0).setPageNumber(250);
+        System.out.println(library.searchBook("Pensée pour moi-même").getTitle() + "\nNombre de page : " + books.get(0).getPageNumber());
     }
 }
